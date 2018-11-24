@@ -42,9 +42,10 @@ prompt.get({
   }
 }, function(err, res) {
   try {
-    const cheetah = download(res.url, targetDir, {
-      tempDir: __dirname + '/temp/'
-    })
+    const tempDir = os.tmpdir() + '/cheetah-cli/'
+    fs.mkdir(tempDir, {}, () => {})
+
+    const cheetah = download(res.url, targetDir, { tempDir })
 
     cheetah
       .on('progress', function (progress) {
