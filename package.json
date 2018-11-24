@@ -1,0 +1,30 @@
+{
+  "name": "cheetah-cli",
+  "version": "0.1.0",
+  "dependencies": {
+    "cheetah-downloader": "^0.1.1",
+    "cli-progress": "^2.1.0",
+    "prompt": "^1.0.0"
+  },
+  "description": "CLI package to download a file with multiple parallel connections",
+  "main": "index.js",
+  "bin": {
+    "cheetah": "./index.js"
+  },
+  "author": "Moin Uddin <me@moin.im> (https://moin.im)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cheetahapp/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cheetahapp/cli/issues"
+  },
+  "keywords": [
+    "cli",
+    "chunks",
+    "cheetah",
+    "parallel",
+    "downloader"
+  ]
+}
